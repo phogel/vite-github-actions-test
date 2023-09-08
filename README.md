@@ -1,6 +1,6 @@
-# React + TypeScript + Vite
+# Vitest with federated modules monorepo in Github Actions test
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This template provides a minimal setup for a monorepo running on vite.
 
 Currently, two official plugins are available:
 

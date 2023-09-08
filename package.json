@@ -1,14 +1,13 @@
 {
-  "name": "githubactionstest",
+  "name": "vitest-githubactions",
   "private": true,
   "version": "0.0.0",
-  "type": "module",
+  "workspaces": [
+    "microfrontend1",
+    "microfrontend2"
+  ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "test": "CI=true vitest"
+    "test": "yarn workspaces foreach run test"
   },
   "dependencies": {
     "@testing-library/react": "^14.0.0",
@@ -27,5 +26,6 @@
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vitest": "^0.34.4"
-  }
+  },
+  "packageManager": "yarn@3.6.3"
 }
